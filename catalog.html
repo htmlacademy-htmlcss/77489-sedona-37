@@ -8,70 +8,61 @@
   <body>
     <div class="container">
       <header class="page-header" data-test="header">
-        <h1 class="visually-hidden">Седона - туристический городок в штате Аризона</h1>
+        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <nav class="navigation">
-          <a href="index.html" class="navigation-logo">
+          <a href="#" class="navigation-logo">
             <img class="logo" src="images/logo.svg" width ="140" height="70" alt="Логотип Седоны">
           </a>
           <ul class="navigation-list marker-none">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link" href="#">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
-            <li class="navigation-item ">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user marker-none">
             <li class="navigation-user-item">
               <a class="navigation-link" href="#">
-                <img src="images/search.svg" width="20" height="20" alt="Иконка поиска">
                 <span class="visually-hidden">Поиск по сайту</span>
               </a>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-link" href="#">
-                <img src="images/heart.svg" width="20" height="20" alt="Добавить в избранное">
                 <span class="visually-hidden">Поставить лайк</span>
               </a>
               <span class="like">12</span>
             </li>
-            <li class="navigation-user-item">
-              <a class="navigation-link navigation-bottom" href="#">Хочу сюда!
-              </a>
-            </li>
-          </ul>
+         </ul>
+          <a class="navigation-link navigation-bottom" href="#">Хочу сюда!
+          </a>
         </nav>
       </header>
       <main class="main-inner" data-test="main">
-        <header class="inner-header">
-          <h1 class="inner-header-title">Гостиницы Седоны</h1>
-          <ul class="inner-header-list marker-none">
-            <li class="inner-header-item">
-              <a class="inner-header-link" href="index.html">
+        <section class="filter" data-test=" filter">
+          <h1 class="filter-title">Гостиницы Седоны</h1>
+          <ol class="filter-list marker-none">
+            <li class="filter-item">
+              <a class="filter-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
-                <img src="#" class="inner-header-icon" alt="">
+                <img src="#" class="filter-icon" alt="">
               </a>
             </li>
-            <li class="inner-header-item">
-              <a class="inner-header-link">Гостиницы</a>
+            <li class="filter-item">
+              <a class="filter-link">Гостиницы</a>
             </li>
-          </ul>
-        </header>
-
-        <section class="filter" data-test=" filter">
+          </ol>
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
           <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
-
-
             <fieldset class="hotel-filter-group">
               <legend class="hotel-filter-title">Инфроструктура:</legend>
               <ul class="hotel-filter-list marker-none">
                 <li class="hotel-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pool">
+                    <input class="control-input" type="checkbox" name="pool"  checked>
                 Бассейн
                   </label>
                 </li>
@@ -84,7 +75,7 @@
                 </li>
                 <li class="hotel-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi" checked>
+                    <input class="control-input" type="checkbox" name="wi-fi">
 
                 WI-FI
                   </label>
@@ -97,14 +88,14 @@
               <ul class="hotel-filter-list marker-none">
                 <li class="hotel-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="hotel">
+                    <input class="control-input" type="radio" name="product-group" value="hotel" checked>
 
-                Отель
+                Гостиница
                   </label>
                 </li>
                 <li class="hotel-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="motel" checked>
+                    <input class="control-input" type="radio" name="product-group" value="motel">
 
                 Мотель
                   </label>
@@ -230,19 +221,16 @@
             <li class="social-item">
               <a class="social-buttom" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Vkontakte</span>
-                <img src="images/vk.svg" width="24" height="14" alt="Vkontakte">
               </a>
             </li>
             <li class="social-item">
               <a class="social-buttom" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
-                <img src="images/telegram.svg" width="18" height="15" alt="Telegram">
               </a>
             </li>
             <li class="social-item">
               <a class="social-buttom" href="https://www.youtube.com/user/htmlacademyrutml">
                 <span class="visually-hidden">Youtube</span>
-                <img src="images/youtube.svg" width="22" height="17" alt="Youtube">
               </a>
             </li>
           </ul>
