@@ -17,18 +17,21 @@
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  font-weight: 400;
   line-height: 21px;
+  font-weight: 400;
   font-style: normal;
   color: #333333;
   background-color: #F2F2F2;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
   background-color: #ffffff;
-  max-width: 1200px;
-  height: auto;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -44,19 +47,6 @@ body {
   overflow: hidden;
 }
 
-.marker-none {
-  list-style-type: none;
-}
-
-.main-hero {
-  background-image: url("../images/hero-background.jpg");
-  background-color: #8e6456;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  text-align: center;
-  vertical-align: middle;
-}
-
 .title {
   color: #000000;
   font-weight: 700;
@@ -70,26 +60,86 @@ body {
   text-align: center;
 }
 
+/* header*/
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.like {
+  background-color: #7DB54F;
+}
+
+.navigation-bottom {
+background: #756157;
+color: #ffffff;
+}
+
+/*hero*/
+
+.main-hero {
+  background-image: url("../images/hero-background.jpg");
+  background-color: #8e6456;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*advantages*/
+
 .advantages-title {
   font-size: 24px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.advantages-object {
+.advantages-description {
+  text-align: center;
+}
+
+.advantages-item-object {
   color: #ffffff;
   background-color: #82B3D3;
 }
 
-.item-object {
-background-color: rgba(131, 179, 211, 0.12);
+.item-second-1 {
+  background-color: rgba(131, 179, 211, 0.12);
 }
+
+.item-second-2 {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/*recommendations*/
+
+.recommendations-list {
+  text-align: center;
+}
+
+.recommendations-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*search*/
 
 .search-link {
   background-color: #756157;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  text-align: center;
 }
 
 .subscribe {
