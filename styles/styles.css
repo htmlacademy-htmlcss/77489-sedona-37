@@ -24,7 +24,7 @@ body {
   background-color: #F2F2F2;
 }
 
-/*.container {
+.container {
   display: flex;
   flex-direction: column;
   width: 1200px;
@@ -32,7 +32,7 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}*/
+}
 
 .visually-hidden {
   position: absolute;
@@ -60,7 +60,38 @@ body {
   text-align: center;
 }
 
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #756157;
+  color: #ffffff;
+}
+
 /* header*/
+
+.page-header {
+  margin: 0 70px;
+}
+
+.navigation {
+  display: flex;
+
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+.navigation-user-container {
+  width: 315px;
+  margin-left: auto;
+}
+
+.navigation-list {
+  width: 465px;
+}
 
 .navigation-link {
   font-size: 20px;
@@ -76,7 +107,7 @@ body {
   line-height: 10px;
 }
 
-.navigation-bottom {
+.navigation-buttom {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -95,7 +126,19 @@ body {
   vertical-align: middle;
 }
 
+.hero-welcome {
+  display: block;
+  margin: 0 auto;
+}
+
 /*advantages*/
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
 
 .advantages-title {
   font-size: 24px;
@@ -109,8 +152,13 @@ body {
 }
 
 .advantages-item-object {
+  display: flex;
   color: #ffffff;
   background-color: #82B3D3;
+}
+
+.advantages-item {
+  width: 400px;
 }
 
 .item-second-1 {
@@ -124,7 +172,15 @@ body {
 /*recommendations*/
 
 .recommendations-list {
+  display: flex;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+}
+
+.recommendations-item {
+  width: 400px;
 }
 
 .recommendations-title {
@@ -137,24 +193,54 @@ body {
 /*search*/
 
 .search-link {
+  display: block;
+  margin: 0 auto;
+  width: 376px;
   background-color: #756157;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
 }
+
+/*subscribe*/
 
 .subscribe {
   background-image: url("../images/subscribe.jpg");
   background-color: #8e6456;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.subscribe-form {
+  text-align: center;
+}
+
+.subscribe-title {
+  color: #ffffff;
+}
+
+.field {
+  width: 452px;
+}
+
+.subscribe-button {
+  width: 232px;
+  background: #82B3D3;
 }
 
 /*footer*/
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
 
 .contact a {
   font-size: 40px;
@@ -163,6 +249,14 @@ body {
   font-style: normal;
   text-decoration: none;
   color: #000000;
+}
+
+.footer-social {
+  width: 142px;
+}
+
+.htmlacademy-link {
+  margin-left: auto;
 }
 
 /*filter catalog*/
