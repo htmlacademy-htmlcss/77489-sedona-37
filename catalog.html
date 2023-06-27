@@ -10,34 +10,34 @@
       <header class="page-header" data-test="header">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <nav class="navigation">
-          <a href="#" class="navigation-logo">
+          <a href="index.html" class="navigation-logo link">
             <img class="logo" src="images/logo.svg" width ="140" height="70" alt="Логотип Седоны">
           </a>
           <ul class="navigation-list list-none">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Главная</a>
+              <a class="navigation-link link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
+              <a class="navigation-link link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user list-none">
             <li class="navigation-user-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link link" href="#">
                 <span class="visually-hidden">Поставить лайк</span>
                 <span class="like">12</span>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="button navigation-button list-none" href="#">Хочу сюда!</a>
+              <a class="button navigation-button link" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -106,21 +106,13 @@
             <div class="catalog-price">
               <fieldset class="catalog-price-group">
                 <legend class="catalog-price-title">Стоимость, ₽:</legend>
-                <ul class="catalog-price-list list-none">
-                  <li class="catalog-price-item">
-                    <label class="price">
-                      <input class="price-min" type="number" name="price-min" min="0" value="0">
-                    </label>
-                  </li>
-                  <li class="catalog-price-item">
-                    <label class="price">
-                      <input class="price-max" type="number" name="price-max" max="10000" value="9000">
-                    </label>
-                  </li>
-                  <li class="catalog-price-item">
-                    <input class="price-range" type="range" name="price-range" min="0" max="10000" value="9000">
-                  </li>
-                </ul>
+                <label class="price">
+                  <input class="price-min" type="number" name="price-min" min="0" value="0">
+                </label>
+                <label class="price">
+                  <input class="price-max" type="number" name="price-max" max="10000" value="9000">
+                </label>
+                <input class="price-range" type="range" name="price-range" min="0" max="10000" value="9000">
               </fieldset>
               <div class="catalog-price-buttons">
                 <button class="button catalog-buttons" type="submit">Применить</button>
