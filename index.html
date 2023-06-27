@@ -24,6 +24,7 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
+
           <ul class="navigation-user list-none">
             <li class="navigation-user-item">
               <a class="navigation-link" href="#">
@@ -36,15 +37,19 @@
                 <span class="like">12</span>
               </a>
             </li>
+            <li class="navigation-user-item">
+              <a class="button navigation-button list-none" href="#">Хочу сюда!</a>
+            </li>
           </ul>
-          <a class="button navigation-button list-none" href="#">Хочу сюда!</a>
         </nav>
       </header>
+
       <main class="main-page" data-test="main">
         <section class="main-hero" data-test="hero">
           <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
           <img class="hero-welcome" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
         </section>
+
         <section class="advantages" data-test="advantages">
           <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -103,14 +108,14 @@
           <a class="search-link list-none" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
-        <section class="subscribe" data-test="subscribe">
+        <article class="subscribe" data-test="subscribe">
           <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subtitle subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https=//echo.htmlacademy.ru" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
-          <button class="button subscribe-button" type="submit">Подписаться</button>
+          <a class="button subscribe-button" type="submit">Подписаться</a>
           </form>
-        </section >
+        </ >
 
       </main>
       <footer class="page-footer" data-test="footer">

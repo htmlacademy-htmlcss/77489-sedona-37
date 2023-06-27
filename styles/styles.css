@@ -21,8 +21,21 @@ body {
   line-height: 21px;
   font-weight: 400;
   font-style: normal;
+  height: 100%;
   color: #333333;
   background-color: #F2F2F2;
+}
+
+html {
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -50,6 +63,7 @@ body {
 
 .list-none {
   text-decoration: none;
+  list-style: none;
 }
 
 .title {
@@ -91,12 +105,8 @@ body {
   margin-right: 30px;
 }
 
-.navigation-user-container {
-  width: 315px;
-  margin-left: auto;
-}
-
 .navigation-list {
+  display: flex;
   width: 465px;
 }
 
@@ -104,8 +114,15 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  padding: 20px 16px;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-user {
+  display: flex;
+  justify-content: flex-end;
+  width: 315px;
 }
 
 .like {
@@ -121,23 +138,23 @@ body {
 /*hero*/
 
 .main-hero {
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/hero-background.jpg");
   background-color: #8e6456;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  vertical-align: middle;
+  text-align: center;
 }
 
-/* .hero-welcome {
-  display: block;
-  margin: 0 auto;
-} */
+.hero-welcome {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
 
 /*advantages*/
 
 .advantages-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -154,8 +171,14 @@ body {
 }
 
 .advantages-item-object {
+  display: flex;
   color: #ffffff;
   background-color: #82B3D3;
+}
+
+.advantages-item {
+  width: 400px;
+  min-height: 385px;
 }
 
 .item-second-1 {
@@ -170,11 +193,11 @@ body {
 
 .recommendations-list {
   display: flex;
-  flex-direction: column;
   text-align: center;
   margin: 0;
   padding: 0;
   width: 1200px;
+  min-height: 385px;
 }
 
 .recommendations-title {
@@ -185,6 +208,10 @@ body {
 }
 
 /*search*/
+
+.search {
+  padding: 96px 305px
+}
 
 .search-link {
   display: block;
@@ -202,31 +229,18 @@ body {
 /*subscribe*/
 
 .subscribe {
+  text-align: center;
   background-image: url("../images/subscribe.jpg");
   background-color: #8e6456;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  min-height: 300px;
   color: #ffffff;
+  padding: 100px 285px;
 }
-
-/*Удалить после проверки, кроме цвета*/
 
 .subscribe-title {
-  text-align: left;
-  /* цвет */
   color: #ffffff;
-}
-
-.subscribe-subtitle {
-  text-align: left;
-}
-
-.subscribe-catalog-title {
-  text-align: left;
-}
-
-.subscribe-catalog-subtitle {
-  text-align: left;
 }
 
 .field {
@@ -265,11 +279,17 @@ body {
 
 /*filter catalog*/
 
+.main-inner {
+  margin: 0;
+  padding: 0;
+}
+
 .filter {
   background-image: url("../images/filter.jpg");
   background-color: #8e6456;
-  background-size: 100% 100%;
+  background-size: 100% auto;
   background-repeat: no-repeat;
+  margin: -11px 0 0;
   padding: 0 70px;
   color: #ffffff;
 }
