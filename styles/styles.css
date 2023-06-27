@@ -152,6 +152,13 @@ img {
 
 /*advantages*/
 
+.advantages-caption {
+  padding-top: 69px;
+  padding-bottom: 69px;
+  /* padding-left: 290px;
+  padding-right: 290px; */
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -191,11 +198,17 @@ img {
 
 /*recommendations*/
 
+.recommendations-caption {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .recommendations-list {
   display: flex;
   text-align: center;
   margin: 0;
   padding: 0;
+  padding-bottom: 54px;
   width: 1200px;
   min-height: 385px;
 }
@@ -234,7 +247,7 @@ img {
   background-color: #8e6456;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 300px;
+  min-height: 415px;
   color: #ffffff;
   padding: 100px 285px;
 }
@@ -245,11 +258,11 @@ img {
 
 .field {
   width: 452px;
+  height: 52px;
 }
 
 .subscribe-button {
-  width: 232px;
-  background: #82B3D3;
+   background: #82B3D3;
 }
 
 /*footer*/
@@ -271,6 +284,18 @@ img {
 
 .footer-social {
   width: 142px;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-buttom {
+  display: block;
+  width: 48px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .htmlacademy-link {
