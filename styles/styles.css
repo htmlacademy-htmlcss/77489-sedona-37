@@ -282,12 +282,12 @@ img {
   color: #000000;
 }
 
-.footer-social {
-  width: 142px;
-}
-
 .social-list {
   display: flex;
+}
+
+.social-item {
+
 }
 
 .social-buttom {
