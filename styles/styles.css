@@ -170,7 +170,7 @@ img {
 
 .main-hero {
   /* margin: -11px 0 0; */
-  background-image: url("../images/hero-background.jpg");
+  background-image: url("../images/hero-background.jpg"), url("../images/vector.svg");
   background-color: #8e6456;
   background-size: 100% 100%;
   background-repeat: no-repeat;
