@@ -458,7 +458,7 @@ input::placeholder {
 
 .hotel-filter-group {
   width: 150px;
-  /* border: 0; */
+  border: 0;
 }
 
 .hotel-filter-buttom {
