@@ -461,6 +461,8 @@ input::placeholder {
   border: 0;
 }
 
+.hotel-filter-1 {}
+
 .hotel-filter-buttom {
   display: flex;
   flex-direction: column;
