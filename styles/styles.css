@@ -112,7 +112,11 @@ img {
 /* header*/
 
 .page-header {
-  margin: 0 70px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 64px;
+  padding: 0 70px;
 }
 
 .navigation {
@@ -121,13 +125,12 @@ img {
 }
 
 .navigation-logo {
-  display: block;
-}
-
-.logo {
-  z-index: 1;
-  display: block;
-  margin-right: 30px;
+  position: relative;
+  top: -1px;
+  width: 140px;
+  height: 70px;
+  margin-right: 28px;
+  margin-bottom: -7px;
 }
 
 .navigation-list {
@@ -179,7 +182,6 @@ img {
 }
 
 .main-hero {
-  margin: -11px 0 0;
   background-image: url("../images/vector.svg"), url("../images/hero-background.jpg");
   background-color: #8e6456;
   background-size: auto;
@@ -428,7 +430,6 @@ input::placeholder {
   background-color: #8e6456;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  margin: -11px 0 0;
   margin-bottom: 50px;
   padding: 0 70px;
   color: #ffffff;
