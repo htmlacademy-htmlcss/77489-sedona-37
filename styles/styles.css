@@ -237,6 +237,7 @@ img {
   display: flex;
   color: #ffffff;
   background-color: #82B3D3;
+  width: 100%;
 }
 
 .advantages-item-object-reverse {
@@ -254,6 +255,10 @@ img {
 
 .item-second-2 {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-block {
+  width: 400px;
 }
 
 .advantages-img {
