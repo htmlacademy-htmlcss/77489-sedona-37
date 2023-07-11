@@ -602,6 +602,7 @@ input::placeholder {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  width: 292px;
 }
 
 .hotel-list {
