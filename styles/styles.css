@@ -150,7 +150,14 @@ img {
   padding: 20px 16px;
   text-align: center;
   color: #000000;
+}
 
+.navigation-link-active {
+  text-decoration: underline;
+  text-decoration-color: rgba(117, 98, 87, 1);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 21px;
+  text-underline-position: under;
 }
 
 .navigation-user {
@@ -230,6 +237,19 @@ img {
   margin-bottom: 62px;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 30px;
+  text-underline-position: under;
+}
+
+.advantages-title-second {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.3);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 30px;
+  text-underline-position: under;
 }
 
 .advantages-description {
@@ -541,6 +561,29 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+}
+
+.catalog-sorting {
+  display: flex;
+  gap: 8px;
+}
+
+.catalog-header-sorting {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 16px 17px;
+}
+
+.catalog-header-sorting svg {
+  width: 16px;
+  height: 14px;
+  margin: 0;
+}
+
+.button-light {
+  border: 2px solid #000000;
 }
 
 .catalog-title {
