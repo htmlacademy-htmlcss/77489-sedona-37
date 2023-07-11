@@ -230,6 +230,7 @@ img {
 }
 
 .advantages-title {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   margin: 0;
@@ -237,20 +238,20 @@ img {
   margin-bottom: 62px;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.3);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 30px;
-  text-underline-position: under;
 }
 
-.advantages-title-second {
-  text-decoration: underline;
-  text-decoration-color: rgba(0, 0, 0, 0.3);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 30px;
-  text-underline-position: under;
+.advantages-title::after {
+  content: "";
+  margin: 30px auto 0;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
 }
+
+.advantages-title-second::after {
+  background-color: rgba(0, 0, 0, 0.3);
+  }
 
 .advantages-description {
   margin: 0;
@@ -312,6 +313,20 @@ img {
 
 .recommendations-item {
   width: 400px;
+  background-repeat: no-repeat;
+  background-position: top 80px center;
+}
+
+.recommendations-item-housing {
+  background-image: url(../images/housing.svg);
+}
+
+.recommendations-item-food {
+  background-image: url(../images/food.svg);
+}
+
+.recommendations-item-souvenir {
+  background-image: url(../images/souvenir.svg);
 }
 
 .recommendations-title {
@@ -591,7 +606,7 @@ input::placeholder {
 .catalog-title {
   margin: 0;
   padding: 0;
-  text-align: left;
+  vertical-align: middle;
 }
 
 .hotel-filter-title {
@@ -605,6 +620,10 @@ input::placeholder {
   line-height: 21px;
   font-weight: 400;
   width: 292px;
+  height: 48px;
+  padding: 14px 20px;
+  box-sizing: border-box;
+
 }
 
 .hotel-list {
@@ -661,6 +680,8 @@ input::placeholder {
 }
 
 .hotel-card-rating p {
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
   padding: 9px 22px;
   background: #F2F2F2;
