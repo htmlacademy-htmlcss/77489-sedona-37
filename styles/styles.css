@@ -162,36 +162,51 @@ img {
   text-underline-position: under;
 }
 
-.navigation-user {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0;
-  padding-inline-start: 0;
-  margin-left: 0;
-  margin-left: auto;
-}
-
-.navigation-icon-icon {
-  position: relative;
-}
-
 .navigation-link:hover {
-   background-color:rgba(0, 0, 0, 0.3)
+  color: rgba(104, 162, 202, 1);
 }
 
 .navigation-link:focus {}
 
 .navigation-link:active {
-  background-color:rgba(0, 0, 0, 0.2)
+  color: rgba(104, 162, 202, 0.5);
 }
 
+.navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+}
+
+.navigation-user-link {
+  min-width: 44px;
+  padding: 22px 12px;
+}
+
+.navigation-icon {
+  fill: #000000;
+}
+
+.navigation-icon:hover {
+  fill: rgba(104, 162, 202, 1);
+}
+
+.navigation-icon:focus {}
+
+.navigation-icon:active {
+  fill: rgba(104, 162, 202, 0.5);
+}
+
+.navigation-icon-like {
+  position: relative;
+}
 
 .like {
   position: absolute;
   font-size: 10px;
   line-height: 10px;
-  left: 922px;
   top: 10px;
   padding: 5px;
   color: #ffffff;
@@ -488,13 +503,14 @@ input::placeholder {
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 /*footer*/
 
 .page-footer {
   display: flex;
+  justify-content: space-between;
   padding: 40px 70px 30px;
 }
 
@@ -530,24 +546,29 @@ input::placeholder {
 }
 
 .social-link {
-  display: block;
+  display: flex;
   width: 48px;
   height: 40px;
-  text-align: center;
-  padding-top: 13px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link svg {
+  fill: #83B3D3;
 }
 
 .social-link:hover .svg {
   fill: #68A2CA;
 }
 
-.htmlacademy-link {
-  margin-left: auto;
+.htmlacademy-link:hover .logo-htmlacademy {
+  fill: rgba(117, 97, 87, 1);
 }
 
-.htmlacademy-link:hover .logo-htmlacademy {
-  fill: tomato;
-  /* fill: rgba(117, 97, 87, 1); */
+.htmlacademy-link:focus .logo-htmlacademy {}
+
+.htmlacademy-link:active .logo-htmlacademy {
+  fill: rgba(117, 97, 87, 0.3);
 
 }
 
@@ -702,6 +723,7 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1060px;
   margin-bottom: 40px;
 }
 
@@ -765,6 +787,7 @@ input::placeholder {
   padding-left: 20px;
   box-sizing: border-box;
   border: 2px solid rgba(229, 229, 229, 1);
+  border-radius: 4px;
 }
 
 .select-control:hover {
