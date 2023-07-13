@@ -95,14 +95,16 @@ img {
 }
 
 .button {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  background: #756157;
+  background: rgba(117, 97, 87, 1);
   color: #ffffff;
   border: 0;
-  border-radius: 5px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 img {
@@ -112,7 +114,11 @@ img {
 /* header*/
 
 .page-header {
-  margin: 0 70px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 64px;
+  padding: 0 70px;
 }
 
 .navigation {
@@ -121,13 +127,12 @@ img {
 }
 
 .navigation-logo {
-  display: block;
-}
-
-.logo {
-  z-index: 1;
-  display: block;
-  margin-right: 30px;
+  position: relative;
+  top: -1px;
+  width: 140px;
+  height: 70px;
+  margin-right: 28px;
+  margin-bottom: -7px;
 }
 
 .navigation-list {
@@ -146,7 +151,14 @@ img {
   padding: 20px 16px;
   text-align: center;
   color: #000000;
+}
 
+.navigation-link-active {
+  text-decoration: underline;
+  text-decoration-color: rgba(117, 98, 87, 1);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 21px;
+  text-underline-position: under;
 }
 
 .navigation-user {
@@ -157,10 +169,31 @@ img {
   margin-left: auto;
 }
 
+.navigation-icon {
+  position: relative;
+}
+
+.navigation-link:hover {
+   background-color:rgba(0, 0, 0, 0.3)
+}
+
+.navigation-link:focus {}
+
+.navigation-link:active {
+  background-color:rgba(0, 0, 0, 0.2)
+}
+
+
 .like {
-  background-color: #7DB54F;
+  position: absolute;
   font-size: 10px;
   line-height: 10px;
+  left: 922px;
+  top: 10px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius: 50%;
 }
 
 .navigation-user .navigation-item:last-child {
@@ -169,7 +202,20 @@ img {
 
 .navigation-button {
   padding: 8px 34px;
+  margin-left: 20px;
 }
+
+.navigation-button:hover {
+  background: rgba(97, 80, 72, 1);
+}
+
+.navigation-button:focus {}
+
+.navigation-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(117, 97, 87, 1);
+}
+
 
 /*hero*/
 
@@ -179,7 +225,6 @@ img {
 }
 
 .main-hero {
-  margin: -11px 0 0;
   background-image: url("../images/vector.svg"), url("../images/hero-background.jpg");
   background-color: #8e6456;
   background-size: auto;
@@ -200,6 +245,9 @@ img {
 /*advantages*/
 
 .advantages-page-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
   margin-bottom: 25px;
   padding-top: 69px;
 }
@@ -216,6 +264,7 @@ img {
 }
 
 .advantages-title {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   margin: 0;
@@ -224,6 +273,19 @@ img {
   text-transform: uppercase;
   text-align: center;
 }
+
+.advantages-title::after {
+  content: "";
+  margin: 30px auto 0;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+}
+
+.advantages-title-second::after {
+  background-color: rgba(0, 0, 0, 0.3);
+  }
 
 .advantages-description {
   margin: 0;
@@ -235,6 +297,7 @@ img {
   display: flex;
   color: #ffffff;
   background-color: #82B3D3;
+  width: 100%;
 }
 
 .advantages-item-object-reverse {
@@ -252,6 +315,10 @@ img {
 
 .item-second-2 {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-block {
+  width: 400px;
 }
 
 .advantages-img {
@@ -280,6 +347,20 @@ img {
 
 .recommendations-item {
   width: 400px;
+  background-repeat: no-repeat;
+  background-position: top 80px center;
+}
+
+.recommendations-item-housing {
+  background-image: url(../images/housing.svg);
+}
+
+.recommendations-item-food {
+  background-image: url(../images/food.svg);
+}
+
+.recommendations-item-souvenir {
+  background-image: url(../images/souvenir.svg);
 }
 
 .recommendations-title {
@@ -322,6 +403,19 @@ img {
   color: #ffffff;
   border-radius: 5px;
 }
+
+.search-link:hover {
+  background: rgba(97, 80, 72, 1);
+}
+
+.search-link:focus {
+}
+
+.search-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(117, 97, 87, 1);
+}
+
 
 /*subscribe*/
 
@@ -371,7 +465,19 @@ img {
   border-radius: 0 5px 5px 0;
 }
 
+.subscribe-button:hover {
+  background: rgba(104, 162, 202, 1);
+}
+
+.subscribe-button:focus {}
+
+.subscribe-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(130, 179, 211, 1);
+}
+
 input::placeholder {
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 24px;
   font-weight: 400px;
@@ -387,6 +493,17 @@ input::placeholder {
 .contact {
   width: 720px;
   text-align: center;
+}
+
+.contact a:hover {
+  color: rgba(117, 97, 87, 1);
+}
+
+.contact a:focus {
+}
+
+.contact a:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .contact a {
@@ -412,8 +529,18 @@ input::placeholder {
   padding-top: 13px;
 }
 
+.social-link:hover .svg {
+  fill: #68A2CA;
+}
+
 .htmlacademy-link {
   margin-left: auto;
+}
+
+.htmlacademy-link:hover .logo-htmlacademy {
+  fill: tomato;
+  /* fill: rgba(117, 97, 87, 1); */
+
 }
 
 /*filter catalog*/
@@ -428,8 +555,6 @@ input::placeholder {
   background-color: #8e6456;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  margin: -11px 0 0;
-  margin-bottom: 50px;
   padding: 0 70px;
   color: #ffffff;
 }
@@ -468,7 +593,6 @@ input::placeholder {
   flex-direction: column;
 }
 
-
 .filter-main-title {
   margin: 0;
   padding: 0;
@@ -484,6 +608,23 @@ input::placeholder {
   padding: 0;
   display: flex;
 }
+
+/* .control-input[Type="checkbox"] {
+  background-color: #ffffff;
+  border-radius: 4px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.control-input[Type="checkbox"]:checked {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center top 5px;
+  background-size: 13px 10px;
+} */
 
 .catalog-price {
   display: flex;
@@ -514,9 +655,30 @@ input::placeholder {
   padding: 8px 50px;
 }
 
+.catalog-buttons:hover {
+  background: rgba(104, 162, 202, 1);
+}
+
+.catalog-buttons:focus {}
+
+.catalog-buttons:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(130, 179, 211, 1);
+}
+
 .catalog-price-reset {
   background: none;
   padding: 8px 50px;
+}
+
+.catalog-price-reset:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.catalog-price-reset:focus {}
+
+.catalog-price-reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*catalog*/
@@ -524,6 +686,7 @@ input::placeholder {
 .catalog {
   width: 1060px;
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .catalog-header {
@@ -532,10 +695,49 @@ input::placeholder {
   margin-bottom: 40px;
 }
 
+.catalog-sorting {
+  display: flex;
+  gap: 8px;
+}
+
+.catalog-header-sorting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.catalog-header-sorting:hover {
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.catalog-header-sorting:focus {
+  border: 2px solid rgba(104, 162, 202, 1);
+}
+
+.catalog-header-sorting:active {
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+
+
+.catalog-header-sorting svg {
+  width: 16px;
+  height: 14px;
+  margin: 0;
+}
+
+.button-light {
+  border: 2px solid #000000;
+}
+
 .catalog-title {
   margin: 0;
   padding: 0;
-  text-align: left;
+  vertical-align: middle;
 }
 
 .hotel-filter-title {
@@ -548,6 +750,15 @@ input::placeholder {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  width: 292px;
+  height: 48px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border: 2px solid rgba(229, 229, 229, 1);
+}
+
+.select-control:hover {
+  border: 2px solid rgba(104, 162, 202, 1);
 }
 
 .hotel-list {
@@ -593,8 +804,19 @@ input::placeholder {
 
 .hotel-card-detail {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
   padding: 8px 26px;
+}
+
+.hotel-card-detail:hover {
+  background: rgba(97, 80, 72, 1);
+}
+
+.hotel-card-detail:focus {}
+
+.hotel-card-detail:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(117, 97, 87, 1);
 }
 
 .hotel-card-rating {
@@ -604,6 +826,8 @@ input::placeholder {
 }
 
 .hotel-card-rating p {
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
   padding: 9px 22px;
   background: #F2F2F2;
@@ -616,8 +840,29 @@ input::placeholder {
   background-color: #82B3D3;
 }
 
+.catalog-card-button:hover {
+  background: rgba(104, 162, 202, 1);
+}
+
+.catalog-card-button:focus {}
+
+.catalog-card-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(130, 179, 211, 1);
+}
+
 .button-active {
    background-color: rgba(125, 181, 79, 1);
+}
+
+.button-active:hover {
+  background: rgba(108, 158, 66, 1);
+}
+
+.button-active:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(125, 181, 79, 1);
+
 }
 
 /* pagination  */
@@ -677,7 +922,12 @@ input::placeholder {
 .field {
   width: 452px;
   min-height: 52px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
   background-color: #F2F2F2;
+  box-sizing: border-box;
 }
 
 .subscribe-button {
