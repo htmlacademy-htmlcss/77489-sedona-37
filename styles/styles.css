@@ -199,7 +199,7 @@ img {
   fill: rgba(104, 162, 202, 0.5);
 }
 
-.navigation-icon-like {
+.navigation-user-like {
   position: relative;
 }
 
@@ -207,8 +207,14 @@ img {
   position: absolute;
   font-size: 10px;
   line-height: 10px;
+  min-width: 20px;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 10px;
-  padding: 5px;
+  left: 19px;
+  padding: 2px;
   color: #ffffff;
   background-color: #7DB54F;
   border-radius: 50%;
@@ -243,7 +249,7 @@ img {
 }
 
 .main-hero {
-  margin-top: -1px;
+  margin-top: 2px;
   background-image: url("../images/vector.svg"), url("../images/hero-background.jpg");
   background-color: #8e6456;
   background-size: auto;
@@ -264,9 +270,8 @@ img {
 /*advantages*/
 
 .advantages-block-title {
-  padding-top: 69px;
-  padding-bottom: 69px;
   margin-bottom: 21px;
+  padding: 69px 0;
 }
 
 .advantages-page-title {
@@ -287,16 +292,17 @@ img {
 .advantages-title {
   font-size: 24px;
   line-height: 26px;
-  margin: 0;
-  padding-top: 102px;
+  margin: 0 auto;
   margin-bottom: 62px;
   text-transform: uppercase;
+  justify-content: center;
   text-align: center;
+  max-width: 175px;
 }
 
 .advantages-title::after {
   content: "";
-  margin: 30px auto 0;
+  /* margin: auto 0; */
   width: 60px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -309,7 +315,6 @@ img {
 
 .advantages-description {
   margin: 0;
-  padding: 0 85px;
   text-align: center;
 }
 
@@ -339,6 +344,7 @@ img {
 
 .advantages-block {
   width: 400px;
+  padding: 102px 85px;
 }
 
 .advantages-img {
@@ -569,7 +575,6 @@ input::placeholder {
 
 .htmlacademy-link:active .logo-htmlacademy {
   fill: rgba(117, 97, 87, 0.3);
-
 }
 
 /*filter catalog*/
