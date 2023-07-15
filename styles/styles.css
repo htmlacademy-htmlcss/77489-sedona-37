@@ -240,7 +240,6 @@ img {
   background: rgba(117, 97, 87, 1);
 }
 
-
 /*hero*/
 
 .page-title {
@@ -305,6 +304,7 @@ img {
   content: "";
   position:absolute;
   left: 50%;
+  top: 82px;
   transform: translateX(-50%);
   width: 60px;
   height: 2px;
@@ -383,6 +383,7 @@ img {
 }
 
 .recommendations-item-housing {
+  background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../images/housing.svg);
 }
 
@@ -391,6 +392,7 @@ img {
 }
 
 .recommendations-item-souvenir {
+  background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../images/souvenir.svg);
 }
 
@@ -511,7 +513,7 @@ img {
 }
 
 input::placeholder {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -764,8 +766,6 @@ input::placeholder {
   border: 2px solid rgba(0, 0, 0, 1);
 }
 
-
-
 .catalog-header-sorting svg {
   width: 16px;
   height: 14px;
@@ -792,12 +792,16 @@ input::placeholder {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  width: 292px;
-  height: 48px;
-  padding-left: 20px;
-  box-sizing: border-box;
+  min-width: 292px;
+  padding: 14px 20px;
+  padding-right: 48px;
+  border-color: #ffffff;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
+  background-image: url("/images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
 }
 
 .select-control:hover {
