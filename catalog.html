@@ -53,10 +53,12 @@
         <section class="filter" data-test=" filter">
           <h1 class="filter-main-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs-list list-none">
-            <li class="breadcrumbs-item">
+            <li class="breadcrumbs-item breadcrumbs-item-icon">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
-                <img src="#" class="breadcrumbs-icon" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="none" viewBox="0 0 13 15">
+                  <path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/>
+                </svg>
               </a>
             </li>
             <li class="breadcrumds-item">
@@ -71,17 +73,17 @@
                 <ul class="hotel-filter-list list-none">
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="pool"  checked>Бассейн
+                      <input class="control-input" type="checkbox" name="pool"  checked><span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                      <input class="control-input" type="checkbox" name="parking" checked><span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">WI-FI
+                      <input class="control-input" type="checkbox" name="wi-fi"><span class="control-label">WI-FI</span>
                     </label>
                   </li>
                 </ul>
@@ -92,17 +94,17 @@
                 <ul class="hotel-filter-list list-none">
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="hotel" checked>Гостиница
+                      <input class="control-input" type="radio" name="product-group" value="hotel" checked><span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="motel">Мотель
+                      <input class="control-input" type="radio" name="product-group" value="motel"><span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="apartments">Апартаменты
+                      <input class="control-input" type="radio" name="product-group" value="apartments"><span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -112,6 +114,9 @@
             <div class="catalog-price">
               <fieldset class="catalog-price-group">
                 <legend class="catalog-price-title filter-title">Стоимость, ₽:</legend>
+                <div class="range">
+
+                </div>
                 <label class="price">
                   <input class="price-min" type="number" name="price-min" min="0" value="0">
                 </label>
