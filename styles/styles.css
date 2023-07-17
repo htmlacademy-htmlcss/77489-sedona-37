@@ -714,6 +714,80 @@ input::placeholder {
   background-size: 20px 20px;
 }
 
+/* Range */
+.range-wrapper-inputs {
+  display: flex;
+  margin-bottom: 36px;
+  gap: 2px
+}
+
+.range-input {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  width: 144px;
+  height: 48px;
+  padding: 12px 20px;
+  border: none;
+}
+
+.range-input::placeholder {
+  margin: 0 auto;
+}
+
+.range-input-min {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-max {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #ffffff;
+  }
+
+.range-toggle:focus {
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.range-toggle:active {
+  outline: 2px solid rgba(131, 179, 211, 1);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
 .catalog-price {
   display: flex;
   justify-content: space-between;
@@ -986,7 +1060,20 @@ input::placeholder {
   padding: 0 12px;
 }
 
-.pagination-current {
+.pagination-link:hover,
+.pagination-link:focus {
+  background: #68A2CA;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background:rgba(130, 179, 211, 1);
+}
+
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
   background: #F2F2F2;
   color: #000000;
 }
