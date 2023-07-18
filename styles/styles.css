@@ -355,6 +355,8 @@ img {
 /*recommendations*/
 .recommendations-page-title {
   padding-top: 64px;
+  width: 505px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
