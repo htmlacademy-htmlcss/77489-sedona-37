@@ -1060,6 +1060,22 @@ border-radius: 4px 0 0 4px;
   right: -10px;
 }
 
+.catalog-filter-label {
+  position: relative;
+}
+
+.catalog-filter-label-text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 12px;
+  right: 21px;
+  z-index: 2;
+}
+
 .catalog-price {
   display: flex;
   justify-content: space-between;
