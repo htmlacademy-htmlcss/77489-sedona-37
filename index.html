@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico">
     <title>Седона. Городок в Аризоне</title>
   </head>
   <body>
@@ -177,24 +178,24 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="find-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group">
-              <label class="modal-input-title" for="arrival-date">Дата Заезда:</label>
+              <label class="modal-field-title" for="arrival-date">Дата Заезда:</label>
               <div class="field-group-booking">
-                <input class="find-form-field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату" value="27 апреля 2020">
+                <input class="find-form-field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату" value="27 апреля 2020" required>
                 <span class="visually-hidden">Выбрать дату заезда.</span>
                 <p class="inpute-date-text inpute-date-error">Мы не можем отправить вас в прошлое.</p>
               </div>
             </div>
             <div class="field-group">
-              <label class="modal-input-title" for="arrival-date">Дата Выезда:</label>
+              <label class="modal-field-title" for="arrival-date">Дата Выезда:</label>
               <div class="field-group-booking">
-                <input class="find-form-field" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату" value="1 сентября 2023">
+                <input class="find-form-field" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату" value="1 сентября 2023" required>
                 <span class="visually-hidden">Выбрать дату заезда.</span>
                 <p class="inpute-date-text">На эти даты есть свободные номера. Пока есть.</p>
               </div>
             </div>
             <div class="add-people">
               <div class="field-group field-group-people">
-                <label class="input-title-people">Взрослые:</label>
+                <label class="field-title-people">Взрослые:</label>
                 <button class="button-people button-people-away" type="button">
                   <svg aria-hidden="true" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0v2h14V0H0Z" fill="#756157" fill-opacity=".3"/>
@@ -210,7 +211,7 @@
                 </button>
               </div>
               <div class="field-group field-group-people">
-                <label class="input-title-people">Дети:</label>
+                <label class="field-title-people">Дети:</label>
                 <div class="tooltip">
                   <button class="button-tooltip" type="button" aria-labelledby="tooltip-label-date">
                     <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">

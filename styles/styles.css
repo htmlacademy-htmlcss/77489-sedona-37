@@ -677,7 +677,7 @@ input::placeholder {
   color: rgba(255, 87, 87, 1);
 }
 
-.modal-input-title {
+.modal-field-title {
   padding: 12px 0 0;
   margin: 0;
   font-size: 20px;
@@ -686,12 +686,13 @@ input::placeholder {
   color: rgba(0, 0, 0, 1);
 }
 
-.input-title-people {
+.field-title-people {
   margin: 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: rgba(0, 0, 0, 1);
+  margin-right: 46px;
 }
 
 .find-form-field {
@@ -726,10 +727,6 @@ input::placeholder {
   align-items: center;
   margin: 0;
   margin-bottom: 48px;
-}
-
-.input-title-people {
-  margin-right: 46px;
 }
 
 input::-webkit-outer-spin-button,
@@ -1267,6 +1264,18 @@ border-radius: 4px 0 0 4px;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
+  background-image: url(../images/four-stars.svg);
+  background-repeat: no-repeat;
+}
+
+.hotel-three-stars {
+  background-image: url(../images/three-stars.svg);
+  background-repeat: no-repeat;
+}
+
+.hotel-two-stars {
+  background-image: url(../images/two-stars.svg);
+  background-repeat: no-repeat;
 }
 
 .hotel-card-rating p {
