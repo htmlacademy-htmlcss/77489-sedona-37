@@ -584,6 +584,10 @@ input::placeholder {
   z-index: 3;
 }
 
+.open-modal {
+  display: block;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -653,6 +657,29 @@ input::placeholder {
   background: rgba(104, 162, 202, 1);
 }
 
+
+.field-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.field-group-people {
+  align-items: center;
+}
+
+.inpute-date-text {
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+  padding: 4px 20px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.inpute-date-error {
+  color: rgba(255, 87, 87, 1);
+}
+
 .modal-input-title {
   padding: 12px 0 0;
   margin: 0;
@@ -685,6 +712,7 @@ input::placeholder {
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  border: 0;
 }
 
 .find-form-field::placeholder {
@@ -742,6 +770,9 @@ border-radius: 4px 0 0 4px;
 }
 
 .tooltip {
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 55px;
   width: 26px;
   height: 26px;
 }
@@ -752,7 +783,6 @@ border-radius: 4px 0 0 4px;
   padding: 0;
   margin: 0;
   display: block;
-
 }
 
 .tooltip-icon {
@@ -773,8 +803,8 @@ border-radius: 4px 0 0 4px;
   border-radius: 10px;
   display: block;
   width: 256px;
-  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
   position: absolute;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
   top: 100%;
   margin-top: 15px;
   left: 50%;
@@ -783,7 +813,7 @@ border-radius: 4px 0 0 4px;
   display: none;
 }
 
-.botton-tooltip:hover + .tooltip-text,
+.button-tooltip:hover + .tooltip-text,
 .button-tooltip:focus + .tooltip-text {
   display: block;
 }
@@ -799,6 +829,10 @@ border-radius: 4px 0 0 4px;
   right:0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.button-children {
+  margin-left: 42px;
 }
 
 /*filter catalog*/
@@ -843,10 +877,13 @@ border-radius: 4px 0 0 4px;
   margin-right: 28px;
   font-size: 16px;
   line-height: 21px;
+  display: flex;
+  align-items: center;
 }
 
-.breadcrumbs-link::before {
+.breadcrumbs-item:not(:last-of-type)::before {
   position: absolute;
+  top: -2px;
   right: 10px;
   width: 8px;
   height: 20px;
@@ -1344,7 +1381,7 @@ border-radius: 4px 0 0 4px;
 
 }
 
-.field {
+.subscribe-field {
   width: 452px;
   min-height: 52px;
   font-size: 18px;
