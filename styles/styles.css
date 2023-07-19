@@ -165,8 +165,6 @@ img {
   color: rgba(104, 162, 202, 1);
 }
 
-.navigation-link:focus {}
-
 .navigation-link:active {
   color: rgba(104, 162, 202, 0.5);
 }
@@ -191,8 +189,6 @@ img {
 .navigation-icon:hover {
   fill: rgba(104, 162, 202, 1);
 }
-
-.navigation-icon:focus {}
 
 .navigation-icon:active {
   fill: rgba(104, 162, 202, 0.5);
@@ -243,10 +239,10 @@ img {
   padding: 0;
 }
 
-.main-hero {
+ .main-hero {
   margin-top: 2px;
-  background-image: url("../images/corners.svg"), url("../images/hero-background.jpg");
   background-color: rgba(117, 97, 87, 1);
+  background-image: url("../images/corners.svg"), url("../images/hero-background.jpg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -364,6 +360,7 @@ img {
 
 .recommendations-list {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -444,8 +441,8 @@ img {
 /*subscribe*/
 .subscribe {
   text-align: center;
-  background-image: url("../images/subscribe.jpg");
   background-color: rgba(117, 97, 87, 1);
+  background-image: url("../images/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 415px;
@@ -842,8 +839,8 @@ border-radius: 4px 0 0 4px;
 }
 
 .filter {
-  background-image: url("../images/filter.jpg");
   background-color: rgba(130, 179, 211, 1);
+  background-image: url("../images/filter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 70px;
@@ -926,7 +923,6 @@ border-radius: 4px 0 0 4px;
 
 .hotel-filter-left {
   display: flex;
-  justify-content: space-between;
   width: 371px;
   gap: 70px;
 }
@@ -965,6 +961,14 @@ border-radius: 4px 0 0 4px;
   background-image: url("../images/checkbox.svg");
   background-repeat: no-repeat;
   background-size: 20px 20px;
+}
+
+.control:hover {
+  opacity: 60%;
+}
+
+.control:active {
+  opacity: 30%;
 }
 
 /* radio */
@@ -1253,8 +1257,6 @@ border-radius: 4px 0 0 4px;
 .hotel-card-detail:hover {
   background: rgba(97, 80, 72, 1);
 }
-
-.hotel-card-detail:focus {}
 
 .hotel-card-detail:active {
   color: rgba(255, 255, 255, 0.3);
