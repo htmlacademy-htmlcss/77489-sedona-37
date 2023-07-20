@@ -243,7 +243,7 @@ img {
   margin-top: 2px;
   background-color: rgba(117, 97, 87, 1);
   background-image: url("../images/corners.svg"), url("../images/hero-background.jpg");
-  background-size: auto;
+  background-size: cover auto;
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -897,6 +897,7 @@ border-radius: 4px 0 0 4px;
 /* hotel-filter */
 .hotel-filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1060px;
   padding-bottom: 70px;
