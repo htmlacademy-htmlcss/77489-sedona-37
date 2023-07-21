@@ -813,7 +813,7 @@ border-radius: 4px 0 0 4px;
 }
 
 .tooltip-text:after {
-  content:'';
+  content:"";
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
@@ -857,6 +857,7 @@ border-radius: 4px 0 0 4px;
 /* breadcrumbs */
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -1306,7 +1307,6 @@ border-radius: 4px 0 0 4px;
 }
 
 .catalog-card-button {
-  padding: 0;
   padding: 8px 20px;
   background-color: rgba(130, 179, 211, 1);
 
@@ -1407,7 +1407,6 @@ border-radius: 4px 0 0 4px;
 .subscribe-form {
   display: flex;
   justify-content: center;
-
 }
 
 .subscribe-field {
