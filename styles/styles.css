@@ -1420,6 +1420,7 @@ border-radius: 4px 0 0 4px;
   box-sizing: border-box;
   border: none;
   padding: 14px 20px;
+  border-radius: 5px 0 0 5px;
 }
 
 .subscribe-button {
